@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ResolutionWindow</class>
+ <widget class="QWidget" name="ResolutionWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Resolution Algorithm (CNF)</string>
+  </property>
+
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="labelInput">
+     <property name="text">
+      <string>შეიყვანე კლაუსები (CNF): თითო ხაზზე თითო კლაუსი</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QTextEdit" name="inputClauses"/>
+   </item>
+
+   <item>
+    <widget class="QPushButton" name="btnResolve">
+     <property name="text">
+      <string>გაშვება (რეზოლუციის ალგორითმი)</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="labelOutput">
+     <property name="text">
+      <string>რეზულტატი:</string>
+     </property>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QTextEdit" name="outputResult">
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
